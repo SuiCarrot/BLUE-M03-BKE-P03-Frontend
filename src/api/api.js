@@ -1,10 +1,10 @@
 export const Api = {
-	baseUrl: "https://rick-and-morty-server.herokuapp.com",
+	baseUrl: "https://blue-m03-bke-p04-backend.onrender.com",
 	keyJwt: localStorage.getItem('keyLogin'),
 
 	// characters
 	createCharacterUrl: () => Api.baseUrl + "/characters/create",
-	readAllCharactersUrl: (offset) => Api.baseUrl + "/characters?limit=8&offset="+offset,
+	readAllCharactersUrl: (offset) => Api.baseUrl + "/characters"+offset,
 	readCharacterByIdUrl: (id) => Api.baseUrl + "/characters/find/" + id,
 	readCharacterByNameUrl:(name)=>Api.baseUrl + "/characters/search?name="+name,
 	updateCharacterUrl: (id) => Api.baseUrl + "/characters/update/" + id,
