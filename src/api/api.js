@@ -1,5 +1,5 @@
 export const Api = {
-	baseUrl: "https://blue-m03-bke-p04-backend.onrender.com/",
+	baseUrl: "https://blue-m03-bke-p04-backend.onrender.com",
 	keyJwt: localStorage.getItem('keyLogin'),
 
 	// characters
